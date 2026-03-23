@@ -41,7 +41,7 @@ export default function Hero() {
 
             {/* LINKEDIN */}
             <a
-              href="https://www.linkedin.com/in/sneha-srivastava-11"
+              href="https://www.linkedin.com/in/sneha-srivastava11"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border border-blue-400 rounded-full text-blue-300 hover:bg-blue-500 hover:text-white transition duration-300"
