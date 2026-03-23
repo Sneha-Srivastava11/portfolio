@@ -98,7 +98,7 @@ export default function Hero() {
           <div className="grid grid-cols-2 md:grid-cols-4 text-center gap-6">
 
             {["Projects", "CGPA", "Certifications", "Internship"].map((item, i) => {
-              const values = ["10+", "8.4", "6+", "1"]
+              const values = ["10+", "8.6", "6+", "1"]
               return (
                 <div key={i} className="group">
                   <h2 className="text-3xl md:text-4xl font-bold group-hover:text-blue-400 transition">
