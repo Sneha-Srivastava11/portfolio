@@ -24,7 +24,7 @@ export default function Hero() {
           </h2>
 
           <p className="text-blue-200 text-xl mb-8">
-            Excelling Academically
+            I am a Computer Science student passionate about Data Science
           </p>
 
           {/* BUTTONS */}
