@@ -14,10 +14,13 @@ const trainings = [
 
 export default function Training() {
   return (
-    <section id="training" className="min-h-screen flex items-center justify-center px-6 md:px-16 bg-[#0a192f]">
-
+    <section
+      id="training"
+      className="min-h-screen flex items-center justify-center px-6 md:px-16 bg-[#0a192f]"
+    >
       <div className="max-w-5xl w-full">
 
+        {/* HEADING */}
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -26,26 +29,28 @@ export default function Training() {
           Training
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        {/* CENTERED CARD */}
+        <div className="flex justify-center">
 
           {trainings.map((t, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-              className="bg-white/5 backdrop-blur-md border border-blue-500/20 rounded-xl overflow-hidden shadow-lg"
+              transition={{ duration: 0.5 }}
+              whileHover={{ scale: 1.03 }}
+              className="w-full md:w-[650px] bg-white/5 backdrop-blur-md border border-blue-500/20 rounded-xl overflow-hidden shadow-xl"
             >
 
               {/* IMAGE */}
               <img
                 src={t.image}
                 alt={t.title}
-                className="w-full h-56 object-cover"
+                className="w-full h-60 object-cover"
               />
 
               {/* CONTENT */}
-              <div className="p-6">
+              <div className="p-6 text-center">
 
                 <h3 className="text-xl font-semibold text-white mb-2">
                   {t.title}
@@ -55,25 +60,29 @@ export default function Training() {
                   {t.org} • {t.duration}
                 </p>
 
-                <p className="text-gray-300 mt-3 text-sm">
+                <p className="text-gray-300 mt-4 text-sm">
                   {t.description}
                 </p>
 
                 {/* TAGS */}
-                <div className="flex gap-2 mt-4 flex-wrap">
-                  <span className="text-xs bg-blue-500 px-2 py-1 rounded">Power BI</span>
-                  <span className="text-xs bg-purple-500 px-2 py-1 rounded">Machine Learning</span>
+                <div className="flex justify-center gap-2 mt-4 flex-wrap">
+                  <span className="text-xs bg-blue-500 px-3 py-1 rounded-full">
+                    Power BI
+                  </span>
+                  <span className="text-xs bg-purple-500 px-3 py-1 rounded-full">
+                    Machine Learning
+                  </span>
                 </div>
 
                 {/* BUTTON */}
                 <a
-  href={t.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block mt-5 px-5 py-2 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg text-white font-medium hover:scale-105 transition duration-300 shadow-lg"
->
-   View Certificate
-</a>
+                  href={t.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-6 px-6 py-2 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg text-white font-medium hover:scale-105 transition duration-300 shadow-lg"
+                >
+                  View Certificate
+                </a>
 
               </div>
 
@@ -83,7 +92,6 @@ export default function Training() {
         </div>
 
       </div>
-
     </section>
   )
 }
