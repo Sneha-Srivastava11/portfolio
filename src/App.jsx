@@ -7,11 +7,12 @@ import Projects from './components/Projects';
 import Achievements from './components/Achievements';
 import Certifications from './components/Certifications';
 import Experience from './components/Experience';
+import Training from './components/Training';
 import GithubStats from './components/GithubStats';
 import LeetcodeStats from './components/LeetcodeStats';
 import Academics from './components/Academics';
 import Contact from './components/Contact';
-import Training from './components/Training';
+
 
 function App() {
   return (
@@ -23,12 +24,13 @@ function App() {
       <About />
       <Hobbies />
       <Skills />
+      <GithubStats />
+      <LeetcodeStats />
       <Projects />
       <Achievements />
       <Certifications />
       <Experience />
-      <GithubStats />
-      <LeetcodeStats />
+      <Training /> 
       <Academics />
       <Contact />
 
