@@ -11,6 +11,7 @@ import GithubStats from './components/GithubStats';
 import LeetcodeStats from './components/LeetcodeStats';
 import Academics from './components/Academics';
 import Contact from './components/Contact';
+import Training from './components/Training';
 
 function App() {
   return (
