@@ -12,6 +12,10 @@ export default function Navbar() {
           <a href="#about" className="hover:text-blue-400">About</a>
           <a href="#skills" className="hover:text-blue-400">Skills</a>
           <a href="#projects" className="hover:text-blue-400">Projects</a>
+
+          {/* ✅ ADD THIS */}
+          <a href="#achievements" className="hover:text-blue-400">Achievements</a>
+
           <a href="#certifications" className="hover:text-blue-400">Certifications</a>
           <a href="#experience" className="hover:text-blue-400">Experience</a>
           <a href="#academics" className="hover:text-blue-400">Academics</a>
